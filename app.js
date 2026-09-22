@@ -1,5 +1,35 @@
 let cart = [];
+function updateCart() {
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+    const cartCount = document.getElementById("cart-count");
 
+    cartItems.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach((item) => {
+        const itemElement = document.createElement("div");
+
+        itemElement.classList.add("cart-item");
+
+        itemElement.innerHTML = `
+            <span>${item.name}</span>
+            <span>$${item.price.toLocaleString("es-AR")}</span>
+        `;
+
+        cartItems.appendChild(itemElement);
+
+        total += item.price;
+    });
+
+    if (cart.length === 0) {
+        cartItems.innerHTML = "<p>Tu carrito está vacío.</p>";
+    }
+
+    cartTotal.textContent = total.toLocaleString("es-AR");
+    cartCount.textContent = cart.length;
+}
 const buttons = document.querySelectorAll(".product button");
 
 buttons.forEach((button) => {
@@ -19,7 +49,7 @@ buttons.forEach((button) => {
             price: price
         });
         
-        document.getElementById("cart-count").textContent = cart.length;
+        updateCart();
         alert(`${name} fue agregado al carrito ☕`);
 
         console.log("Carrito:", cart);
