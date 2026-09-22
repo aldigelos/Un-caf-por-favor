@@ -1,3 +1,4 @@
+alert("app.js está funcionando");
 let cart = [];
 
 const buttons = document.querySelectorAll(".product button");
