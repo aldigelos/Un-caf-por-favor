@@ -18,6 +18,7 @@ buttons.forEach((button) => {
             name: name,
             price: price
         });
+        
         document.getElementById("cart-count").textContent = cart.length;
         alert(`${name} fue agregado al carrito ☕`);
 
