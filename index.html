@@ -1,125 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Café, por favor</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<section id="productos" class="products-section">
 
-<body>
+    <h2>Nuestros cafés</h2>
 
-    <header>
-        <div class="logo">Un Café, por favor ☕</div>
+    <div class="products-grid">
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#productos">Cafés</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#carrito">🛒 Carrito (<span id="cart-count">0</span>)</a>
-        </nav>
-    </header>
+        <!-- Café Colombia -->
+        <div class="product">
 
-    <main>
+            <h3>
+                <a href="producto.html">Café Colombia</a>
+            </h3>
 
-        <section id="inicio" class="hero">
-            <div>
-                <h1>Un buen café<br>empieza acá.</h1>
-                <p>
-                    Cafés seleccionados para disfrutar en casa,
-                    todos los días.
-                </p>
-                <a href="#productos" class="button">Ver cafés</a>
-            </div>
-        </section>
-        <section id="carrito" class="cart-section">
-            <h2>Tu carrito</h2>
-
-            <div id="cart-items">
-                <p>Tu carrito está vacío.</p>
-            </div>
-
-            <div class="cart-total">
-                <strong>Total: $<span id="cart-total">0</span></strong>
-            </div>
-
-            <a href="checkout.html" class="checkout-button">
-        Continuar al checkout
-            </a>
-        </section>
-        <section id="productos" class="products-section">
-            <h2>Nuestros cafés</h2>
-            <p class="section-intro">
-                Elegí tu favorito y descubrí nuevos sabores.
-            </p>
-
-            <div class="products">
-
-                <article class="product">
-                    <div class="product">
-    <h3>
-        <a href="producto.html">Café Colombia</a>
-    </h3>
-
-    <p>Un café suave y equilibrado.</p>
-
-    <span>$12.500</span>
-
-    <button>Agregar al carrito</button>
-</div>
-                </article>
-
-                <article class="product">
-                    <div class="product-image">☕</div>
-                    <h3>Café Brasil</h3>
-                    <p>Suave, equilibrado y dulce.</p>
-                    <span>$11.900</span>
-                    <button>Agregar al carrito</button>
-                </article>
-
-                <article class="product">
-                    <div class="product-image">☕</div>
-                    <h3>Café Ethiopia</h3>
-                    <p>Frutal, floral y aromático.</p>
-                    <span>$13.500</span>
-                    <button>Agregar al carrito</button>
-                </article>
-
-                <article class="product">
-                    <div class="product-image">☕</div>
-                    <h3>Blend de la casa</h3>
-                    <p>Una combinación equilibrada y versátil.</p>
-                    <span>$12.900</span>
-                    <button>Agregar al carrito</button>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="nosotros" class="about">
-            <h2>El café también es un momento</h2>
             <p>
-                En Un Café, por favor creemos que preparar un café
-                puede ser una pequeña pausa en medio del día.
-                Seleccionamos cafés para que puedas disfrutar
-                ese momento en casa.
+                Un café suave y equilibrado, ideal para disfrutar todos los días.
             </p>
-        </section>
 
-        <section id="contacto" class="contact">
-            <h2>¿Querés saber más?</h2>
-            <p>Escribinos y te ayudamos a encontrar tu café ideal.</p>
-            <button>Contactanos</button>
-        </section>
+            <span>$12.500</span>
 
-    </main>
+            <button>Agregar al carrito</button>
 
-    <footer>
-        <p>© 2026 Un Café, por favor</p>
-    </footer>
+        </div>
 
-<script src="app.js"></script>
 
-</body>
-</html>
+        <!-- Café Brasil -->
+        <div class="product">
+
+            <h3>
+                <a href="producto-brasil.html">Café Brasil</a>
+            </h3>
+
+            <p>
+                Un café intenso y aromático, con notas dulces y agradables.
+            </p>
+
+            <span>$11.900</span>
+
+            <button>Agregar al carrito</button>
+
+        </div>
+
+
+        <!-- Café Ethiopia -->
+        <div class="product">
+
+            <h3>
+                <a href="producto-ethiopia.html">Café Ethiopia</a>
+            </h3>
+
+            <p>
+                Un café con notas florales y frutales, de perfil delicado.
+            </p>
+
+            <span>$13.500</span>
+
+            <button>Agregar al carrito</button>
+
+        </div>
+
+
+        <!-- Blend de la casa -->
+        <div class="product">
+
+            <h3>
+                <a href="producto-blend.html">Blend de la casa</a>
+            </h3>
+
+            <p>
+                Nuestra combinación especial, equilibrada y con mucho cuerpo.
+            </p>
+
+            <span>$12.900</span>
+
+            <button>Agregar al carrito</button>
+
+        </div>
+
+    </div>
+
+</section>
