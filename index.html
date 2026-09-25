@@ -1,80 +1,252 @@
-<section id="productos" class="products-section">
+<!DOCTYPE html>
+<html lang="es">
 
-    <h2>Nuestros cafés</h2>
+<head>
 
-    <div class="products-grid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Café Colombia -->
-        <div class="product">
+    <title>Un Café, por favor</title>
 
-            <h3>
-                <a href="producto.html">Café Colombia</a>
-            </h3>
+    <link rel="stylesheet" href="styles.css">
 
-            <p>
-                Un café suave y equilibrado, ideal para disfrutar todos los días.
-            </p>
+</head>
 
-            <span>$12.500</span>
 
-            <button>Agregar al carrito</button>
+<body>
 
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Un Café, por favor ☕
         </div>
 
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Cafés</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">Carrito 🛒 (<span id="cart-count">0</span>)</a>
+        </nav>
 
-        <!-- Café Brasil -->
-        <div class="product">
+    </header>
 
-            <h3>
-                <a href="producto-brasil.html">Café Brasil</a>
-            </h3>
+
+    <!-- HERO -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <h1>Un buen café empieza acá ☕</h1>
+
+                <p>
+                    Cafés seleccionados para disfrutar todos los días.
+                </p>
+
+                <a href="#productos" class="button">
+                    Ver nuestros cafés
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+
+        <section id="productos" class="products-section">
+
+            <h2>Nuestros cafés</h2>
+
+            <div class="products-grid">
+
+
+                <!-- Café Colombia -->
+
+                <div class="product">
+
+                    <h3>
+                        <a href="producto.html">
+                            Café Colombia
+                        </a>
+                    </h3>
+
+                    <p>
+                        Un café suave y equilibrado, ideal para disfrutar todos los días.
+                    </p>
+
+                    <span>$12.500</span>
+
+                    <button>
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+
+                <!-- Café Brasil -->
+
+                <div class="product">
+
+                    <h3>
+                        <a href="producto-brasil.html">
+                            Café Brasil
+                        </a>
+                    </h3>
+
+                    <p>
+                        Un café intenso y aromático, con notas dulces y agradables.
+                    </p>
+
+                    <span>$11.900</span>
+
+                    <button>
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+
+                <!-- Café Ethiopia -->
+
+                <div class="product">
+
+                    <h3>
+                        <a href="producto-ethiopia.html">
+                            Café Ethiopia
+                        </a>
+                    </h3>
+
+                    <p>
+                        Un café con notas florales y frutales, de perfil delicado.
+                    </p>
+
+                    <span>$13.500</span>
+
+                    <button>
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+
+                <!-- Blend de la casa -->
+
+                <div class="product">
+
+                    <h3>
+                        <a href="producto-blend.html">
+                            Blend de la casa
+                        </a>
+                    </h3>
+
+                    <p>
+                        Nuestra combinación especial, equilibrada y con mucho cuerpo.
+                    </p>
+
+                    <span>$12.900</span>
+
+                    <button>
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+
+        <section id="nosotros" class="about-section">
+
+            <h2>Sobre nosotros</h2>
 
             <p>
-                Un café intenso y aromático, con notas dulces y agradables.
+                En Un Café, por favor creemos que disfrutar un buen café
+                puede ser parte de cualquier momento del día.
             </p>
-
-            <span>$11.900</span>
-
-            <button>Agregar al carrito</button>
-
-        </div>
-
-
-        <!-- Café Ethiopia -->
-        <div class="product">
-
-            <h3>
-                <a href="producto-ethiopia.html">Café Ethiopia</a>
-            </h3>
 
             <p>
-                Un café con notas florales y frutales, de perfil delicado.
+                Seleccionamos diferentes orígenes y blends para que
+                encuentres el café que más te guste.
             </p>
 
-            <span>$13.500</span>
-
-            <button>Agregar al carrito</button>
-
-        </div>
+        </section>
 
 
-        <!-- Blend de la casa -->
-        <div class="product">
+        <!-- CARRITO -->
 
-            <h3>
-                <a href="producto-blend.html">Blend de la casa</a>
-            </h3>
+        <section id="carrito" class="cart-section">
+
+            <h2>Tu carrito</h2>
+
+            <div id="cart-items">
+
+                <p>
+                    Tu carrito está vacío.
+                </p>
+
+            </div>
+
+
+            <div class="cart-total">
+
+                <strong>
+                    Total: $<span id="cart-total">0</span>
+                </strong>
+
+            </div>
+
+
+            <a href="checkout.html" class="checkout-button">
+                Continuar al checkout
+            </a>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section id="contacto" class="contact-section">
+
+            <h2>Contacto</h2>
 
             <p>
-                Nuestra combinación especial, equilibrada y con mucho cuerpo.
+                ¿Tenés alguna consulta? Escribinos.
             </p>
 
-            <span>$12.900</span>
+            <a href="mailto:hola@uncafe-porfavor.com" class="button">
+                Contactarnos
+            </a>
 
-            <button>Agregar al carrito</button>
+        </section>
 
-        </div>
+    </main>
 
-    </div>
 
-</section>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Un Café, por favor
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
